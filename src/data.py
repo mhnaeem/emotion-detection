@@ -28,6 +28,12 @@ class DataManager:
 
         self.data, self.mapped_emotions = self.filter_data_object()
 
+    def get_mapped_emotions(self):
+        """
+        :return: Returns a dictionary of the mapped emotions and their labels
+        """
+        return self.mapped_emotions
+
     def get_image_labels(self, usage: str):
         """
         Returns all the labels for all the corresponding images, maintaining order from the dataset

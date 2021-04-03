@@ -20,7 +20,7 @@ class ModelPlots:
         self.data_manager = data_manager
 
         # mapped emotions from the data
-        self.mapped_emotions = data_manager.get_formatted_data()["mapped_emotions"]
+        self.mapped_emotions = data_manager.get_mapped_emotions()
 
         # list of all the emotions to get the data for
         self.emotions_to_show = list(self.mapped_emotions.keys())
