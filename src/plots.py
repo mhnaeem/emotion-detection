@@ -119,17 +119,18 @@ class ModelPlots:
 
         value = self.data_manager.get_weights("", emotion_row=False)
         labels = ('Training', 'PublicTest', 'PrivateTest')
+        printable_labels = ('Training Set', 'Validation Set', 'Test Set')
 
         fig = plt.figure()
         fig.canvas.manager.set_window_title("Distribution of Dataset")
 
-        plt.pie(value[1], labels=labels, autopct='%1.1f%%', startangle=90, colors=['#0091ea', '#cfd8dc', '#607d8b'])
+        plt.pie(value[1], labels=printable_labels, autopct='%1.1f%%', startangle=90, colors=['#0091ea', '#cfd8dc', '#607d8b'])
         plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
         t = ""
         for i in range(len(labels)):
-            keys, values, totals = self.data_manager.get_weights(i, emotion_row=False)
-            t += '{:15s} {:s} \n'.format(labels[i] + ":", str(totals[i]))
+            keys, values, totals = self.data_manager.get_weights(labels[i], emotion_row=False)
+            t += '{:20s} {:s} \n'.format(printable_labels[i] + ":", str(totals[i]))
 
         plt.text(0.02, 0.80, t, fontsize=12, transform=plt.gcf().transFigure)
 
