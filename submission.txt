@@ -1,0 +1,36 @@
+Course: COMP 4301-001 Computer Vision
+Group Members:
+	Muhammad Hammad
+	Elliott Barnes
+
+Group Project - Emotion Detection Using Deep Convolutional Neural Network
+
+Directory Structure:
+   All files for our submission is contained within the emotion-detection directory.
+
+   1. The data directory contains the data set and any other temporary data files
+        a. The fer2013.csv file is our dataset
+
+   2. The documents directory contains our documents
+        a. The emotion_detection_presentation.pdf file is our group's presentation
+        b. The emotion_detection_report.pdf file is our group's report
+
+   3. The out directory contains our outputs
+        a. The out.txt file is our console's output from running the training
+        b. The emotion_model.h5 is our saved neural network model
+
+   4. The src directory contains all source code for this entire project
+        a. The data.py file contains code to manage and manipulate the dataset
+        b. The demo.py file contains code to run the model against live feed from the webcam
+        c. The main.py file is our main code for running all aspects of the application
+        d. The model.py file contains code for our model's structure and training
+        e. The plots.py file contains code for creating our graphs and plots
+
+Important Notes:
+
+   1. We suggest using Python 3.7 for running this application
+   2. To run the code first change current directory to src and then run the main.py file using `python3 ./main.py`
+   3. The main.py file has lots of boolean variables that can be changed which part of the code needs to run, please change them for your needs
+   4. We suggest having IMPORT_FROM_SCRATCH variable in main.py to be always set to True
+   5. Retraining the model using main.py will overwrite the existing saved model
+   6. Retraining our model takes approximately ~20 mins
