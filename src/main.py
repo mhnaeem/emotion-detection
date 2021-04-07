@@ -35,7 +35,8 @@ EPOCHS = 50
 RUN_DEMO = True
 
 # boolean variable to decide if model should be trained
-TRAIN_MODEL = True
+# suggest keeping this as False, as it will overwrite our saved files and takes ~20 mins to complete
+TRAIN_MODEL = False
 
 # boolean variable to decide if things should be imported from scratch, keep True for good results
 IMPORT_FROM_SCRATCH = True
