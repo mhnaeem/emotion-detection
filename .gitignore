@@ -3,3 +3,4 @@ venv
 **/__pycache__/
 data/fer2013.csv
 **/*.npy
+.DS_Store

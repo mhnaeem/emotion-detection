@@ -18,6 +18,7 @@ Directory Structure:
    3. The out directory contains our outputs
         a. The out.txt file is our console's output from running the training
         b. The emotion_model.h5 is our saved neural network model
+        c. The images directory contains all plots, graphs and images pertaining to our model
 
    4. The src directory contains all source code for this entire project
         a. The data.py file contains code to manage and manipulate the dataset
